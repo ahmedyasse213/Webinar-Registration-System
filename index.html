@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webinar Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Webinar Registration</h1>
+        <form id="registration-form" action="register.php" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="webinar">Webinar:</label>
+                <select name="webinar" id="webinar" required>
+                    <option value="">Select Webinar</option>
+                    <option value="webinar1">Webinar 1</option>
+                    <option value="webinar2">Webinar 2</option>
+                    <option value="webinar3">Webinar 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
